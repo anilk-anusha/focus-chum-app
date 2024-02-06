@@ -1,7 +1,7 @@
+//imports
+import { ChevronRightIcon } from '@heroicons/react/24/solid'
 
-import { CheckCircleIcon } from '@heroicons/react/24/solid'
-
-const FocusChumForm = ({ task, handleInput, handleSubmit}) => {
+const IntroForm = ({ task, handleInput, handleSubmit}) => {
     return (
       <>
         <h1 className='text-4xl sm:text-6xl font-lexend font-bold tracking-wide text-center'>Focus Chum 🎯</h1>
@@ -15,11 +15,12 @@ const FocusChumForm = ({ task, handleInput, handleSubmit}) => {
                 value={task}
                 onInput={handleInput}
               />
-              <button className='bg-inherit rounded-md font-sans text-slate-800  py-2 pr-3 focus:outline-none focus:text-teal-600 hover:text-teal-600'>
-                <CheckCircleIcon className="h-12 w-12" />
+              <button className='bg-inherit rounded-md font-lexend text-slate-800  py-2 pr-3 focus:outline-none focus:text-teal-600 hover:text-teal-600' >
+                <ChevronRightIcon className="h-10 w-10 pointer-events-none" />
+                
               </button>
             </form>
       </>
     )
   }
-  export default FocusChumForm;
+  export default IntroForm;

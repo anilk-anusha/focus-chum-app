@@ -1,9 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import JSConfetti from 'js-confetti'
+const jsConfetti = new JSConfetti()
 
 //component imports
-import FocusChumForm from './components/FocusChumForm'
+import IntroForm from './components/IntroForm'
+import OneTask from './components/OneTask'
+
+
+function getSuccessMessage() {
+  const messages = ["Congrats!", "Great job!", "Well Done!", "Up, up, and up!", "Woohoo!", "Way to go!", "Awesome!", "Let's go!", "You got this!", "YES!", "Yay!", "Yeah!"];
+  return messages[Math.floor(Math.random() * messages.length)];
+}
 
 
 function App() {
@@ -19,18 +26,32 @@ function App() {
     setTask(e.target.value);
   }
 
+  const handleCompletedTask = async (e) => {
+    e.target.setAttribute('disabled', true);
+    setTask(getSuccessMessage());
+    await jsConfetti.addConfetti({
+      emojis: ["🎉", "🎈", "✅"]
+    })
+    e.target.removeAttribute('disabled');
+    setTask("");
+    setIsCompleted(true);
+  }
+
 
   return (
-    <main className="grid place-items-center min-h-screen bg-gradient-to-b from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 text-slate-900 dark:text-slate-200">
+    <main className="grid place-items-center min-h-screen bg-gradient-to-b from-cyan-200 to-slate-200 ">
       <div className="grid place-items-center gap-8 m-8">
-        {isCompleted && (
-
-          <FocusChumForm
+        {
+          isCompleted && <IntroForm
             task={task}
             handleInput={handleInput}
             handleSubmit={handleSubmit} />
-
-        )}
+        }
+        {
+          !isCompleted && <OneTask
+            task={task}
+            handleCompletedTask={handleCompletedTask} />
+        }
       </div>
     </main>
 

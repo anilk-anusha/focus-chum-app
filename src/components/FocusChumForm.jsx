@@ -1,5 +1,5 @@
 
-
+import { CheckCircleIcon } from '@heroicons/react/24/solid'
 
 const FocusChumForm = ({ task, handleInput, handleSubmit}) => {
     return (
@@ -22,4 +22,4 @@ const FocusChumForm = ({ task, handleInput, handleSubmit}) => {
       </>
     )
   }
-  export default FocusChumForm
+  export default FocusChumForm;

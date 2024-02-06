@@ -9,7 +9,7 @@ const DoneButton = ({ task, handleCompletedTask }) => {
       autoFocus
       onClick={handleCompletedTask}
     >
-      <span className="pointer-events-none" >{task}</span>
+      {/* <span className="pointer-events-none" >{task}</span> */}
       <CheckCircleIcon className='pointer-events-none w-10 h-10' />
     </button>
   )

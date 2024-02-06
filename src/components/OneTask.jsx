@@ -6,6 +6,7 @@ const OneTask = ({ task, handleCompletedTask }) => {
     <>
       <h1 className='text-3xl sm:text-5xl font-bold font-lexend text-center'>{task}</h1>
       <DoneButton 
+        text="Mark Done"
         handleCompletedTask={handleCompletedTask}
       />
     </>

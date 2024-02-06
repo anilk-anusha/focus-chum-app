@@ -4,7 +4,7 @@ import { ChevronRightIcon } from '@heroicons/react/24/solid'
 const IntroForm = ({ task, handleInput, handleSubmit}) => {
     return (
       <>
-        <h1 className='text-4xl sm:text-6xl font-lexend font-bold tracking-wide text-center'>Focus Chum 🎯</h1>
+        <h1 className='text-4xl sm:text-6xl font-lexend font-bold tracking-wide text-center'>FocusChum📋</h1>
             <h1 className='text-2xl sm:text-4xl font-roboto text-center'>one task, one focus, ultimate success!</h1>
             <form className='flex ring-4 rounded-md ring-slate-200  dark:ring-slate-800 focus-within:ring-teal-600 focus-within:ring-offset-4 bg-slate-200 ring-offset-slate-200 dark:ring-offset-slate-800' onSubmit={handleSubmit}>
               <input type="text"

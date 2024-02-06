@@ -8,7 +8,7 @@ FocusChum is not just another productivity app – it's your ultimate companion 
 
 - [General Info](#general-info)
 - [Website](#website)
-- [Highlights](#Highlights)
+- [Highlights](#highlights)
 - [Technologies](#technologies)
 - [Setup](#setup)
 - [Screenshots](#screenshots)
@@ -24,7 +24,7 @@ FocusChum is not just another productivity app – it's your ultimate companion 
 
 **🎉 FocusChum App Website 🎉**
 
-https://hue-express.netlify.app/
+https://focus-chum-app.netlify.app/
 
 
 ## Highlights
@@ -45,6 +45,11 @@ https://hue-express.netlify.app/
 - JS Confetti
 
 ## Screenshots
+
+<img width="960" alt="image" src="https://github.com/anilk-anusha/focus-chum-app/assets/130001836/7bc8e87c-a10a-480e-888f-265bed67cc84">
+<img width="960" alt="image" src="https://github.com/anilk-anusha/focus-chum-app/assets/130001836/123fe1d0-8be0-47f8-900a-1d236c331261">
+<img width="960" alt="image" src="https://github.com/anilk-anusha/focus-chum-app/assets/130001836/d2549879-35ef-48cb-8381-acf73188a98c">
+<img width="960" alt="image" src="https://github.com/anilk-anusha/focus-chum-app/assets/130001836/3a17ec6a-4f42-4b9e-8152-2920eaabf70d">
 
 
 ## Setup

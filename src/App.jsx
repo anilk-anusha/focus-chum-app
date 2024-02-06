@@ -53,13 +53,8 @@ function App() {
             handleCompletedTask={handleCompletedTask} />
         }
       </div>
-
-      {/* <footer class="fixed bottom-0 left-0 z-20 w-full p-2 shadow md:flex md:items-center md:justify-between md:p-2.5">
-        <span class="text-sm text-gray-500 sm:text-center">Made with ❤️ from <a href="https://anusha-anilkumar.netlify.app/" class="hover:underline">Anusha Anil Kumar</a>.
-        </span>
-      </footer> */}
-
-      <footer className="fixed bottom-0 left-0 z-20 w-full p-2 md:flex md:items-center md:justify-around">
+      
+      <footer className="fixed bottom-0 left-0 z-20 w-full p-2 md:flex md:items-center md:justify-around flex flex-row flex-wrap w-full h-auto justify-center -py-2">
         <span className="text-sm text-gray-500 sm:text-center">Made with ❤️ from <a href="https://anusha-anilkumar.netlify.app/" class="hover:underline">Anusha Anil Kumar</a>
         </span>
       </footer>

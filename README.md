@@ -24,7 +24,7 @@ FocusChum is not just another productivity app – it's your ultimate companion 
 
 **🎉 FocusChum App Website 🎉**
 
-https://focus-chum-app.netlify.app/
+https://focus-chum.netlify.app/
 
 
 ## Highlights
